@@ -79,4 +79,9 @@
                 button.textContent = "See More";
             }
         }
-    
+    function buyMedicines(){
+        alert("This Service will be available soon...");
+    }
+    function onlineConsult(){
+        alert("This Facility will be available soon...");
+    }

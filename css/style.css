@@ -99,8 +99,12 @@ body {
  } */
 .info>a {
   text-decoration: none;
-  margin: 0 10px 0 10px;
+  margin: 0 20px 0 10px;
   padding: 0 10px 0 10px;
+}
+.info>a:last-child{
+  /* background-color:cadetblue; */
+  border:1px solid rgb(188, 183, 183);
 }
 
 #logo {
@@ -199,7 +203,7 @@ nav {
 }
 
 .icon-container .twitter i {
-  color: rgb(0, 140, 255);
+  color: rgb(27, 31, 34);
 }
 
 .icon-container .youtube i {

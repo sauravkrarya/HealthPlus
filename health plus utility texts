@@ -4,3 +4,132 @@ HEALTH⁺
 
 
 Health Plus stands out for its comprehensive care, experienced medical team, and user-friendly platform. We offer a wide range of services, easy appointment booking, and personalized patient care, ensuring you receive the best medical attention when you need it most. Choose Health Plus for a seamless and efficient healthcare experience.
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="png" href="./img/health plus favicon.png">
+
+    <style>
+        body {
+            background-color: rgb(240, 229, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .toggle-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="form-title">Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" class="form-control" id="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" class="form-control" id="login-password" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Login</button>
+        </form>
+        <form id="register-form" class="hidden">
+            <div class="form-group">
+                <label for="register-name">Name</label>
+                <input type="text" class="form-control" id="register-name" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" class="form-control" id="register-email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-phone">Phone Number</label>
+                <input type="tel" class="form-control" id="register-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" class="form-control" id="register-password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" required>
+                <div id="password-error" class="error"></div>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Register</button>
+        </form>
+        <a href="#" id="toggle-link" class="toggle-link">New user? Register now</a>
+    </div>
+ 
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const toggleLink = document.getElementById('toggle-link');
+        const formTitle = document.getElementById('form-title');
+        const passwordError = document.getElementById('password-error');
+        const confirmPassword = document.getElementById('confirm-password');
+        const registerPassword = document.getElementById('register-password');
+
+        toggleLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (registerForm.classList.contains('hidden')) {
+                registerForm.classList.remove('hidden');
+                loginForm.classList.add('hidden');
+                formTitle.textContent = 'Register';
+                toggleLink.textContent = 'Already have an account? Login';
+            } else {
+                registerForm.classList.add('hidden');
+                loginForm.classList.remove('hidden');
+                formTitle.textContent = 'Login';
+                toggleLink.textContent = 'New user? Register now';
+            }
+        });
+
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (registerPassword.value !== confirmPassword.value) {
+                passwordError.textContent = 'Passwords do not match!';
+            } else {
+                passwordError.textContent = '';
+                alert('Registration successful!');
+                registerForm.reset();
+                registerForm.classList.add('hidden');
+                loginForm.classList.remove('hidden');
+                formTitle.textContent = 'Login';
+                toggleLink.textContent = 'New user? Register now';
+            }
+        });
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Login successful!');
+            loginForm.reset();
+        });
+    </script>
+</body>
+</html> -->
